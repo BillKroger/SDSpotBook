@@ -1,0 +1,379 @@
+/* 
+Theme Name:   SD Spot Book (_s)
+Theme URI:    http://underscores.me/
+Description:  Underscores Child Theme
+Author:       Bill Kroger
+Author URI:   http://billykroger.com
+Template:     _s-master
+Version:      1.0
+*/
+
+
+/********** RESETS **********/
+a {
+  transition: color 400ms;
+}
+
+a:focus {
+  outline-offset: 0px;
+}
+
+a, a:focus, a:hover, a:active, a:visited {
+  outline: none !important;
+}
+
+a:visited {
+  color: #FFF;
+}
+
+a:hover {
+  color: #337AB7;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+}
+
+#main {
+  background: #000;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.background {
+  background: #000;
+}
+
+
+/********** HEADER **********/
+#header {
+  padding: 10px 0px;
+}
+
+.navbar-brand {
+  max-width: 75%;
+  padding: 0px;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/********** NAVBAR **********/
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  background: #222;
+}
+
+
+
+/********** NAVBAR MENU **********/
+.dropdown-menu {
+  background-color: #222;
+  /*border-right: 3px solid #888;
+  border-bottom: 3px solid #888;
+  border-left: 3px solid #888;*/
+  max-height: 270px;
+  min-width: 250px;
+  margin: 10px 0 0;
+  padding: 15px;
+}
+
+.dropdown-menu p {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-weight: 400;
+  margin: 0 auto;
+  letter-spacing: .05em;
+}
+
+#passwordLabel {
+  margin-top: 5px;
+}
+
+.dropdown-menu input {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  margin: 5px auto 5px;
+  padding: 5px;
+  min-width: 100%;
+  letter-spacing: .05em;
+  font-size: 1.5em !important;
+}
+
+.dropdown-menu button {
+  display: block;
+  margin: 10px auto 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+.navbarItems {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, 
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+  color: #337AB7;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+} 
+
+
+/********** JUMBOTRON **********/
+.jumbotron {
+	background-image: url("../_s-master/images/bslipslide_bw.png");
+  background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 15px;
+  height: 400px;
+  width: 100%;
+}
+
+.jumbotron .container {
+  width: 100%;
+}
+
+
+
+/********** JUMBOTRON - TRANSPARENT DIV **********/
+#popUp {
+  background-image: url("../_s-master/images/popUp60.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+  top: 75px;
+  max-width: 480px;
+  min-height:140px;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.findSpots {
+  text-align: center;
+  color: #000; 
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5em;
+}
+
+
+
+/********** JUMBOTRON - SEARCH FORM **********/
+.searchbox {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  margin-bottom: 15px;
+  height: auto;
+}
+
+.searchbox input {
+  display: inline-block;
+  height: 50px !important;
+  vertical-align: middle;
+  font-size: 1.5em !important;
+}
+
+form {
+  max-width:500px;
+  margin: 0 auto;
+}
+
+form span .searchBox {
+  position: inline-block;
+
+}
+
+.search { 
+  padding: 6px 15px 6px 30px !important;
+  margin: 3px; 
+  /*background: url('../_s-master/images/search.png') no-repeat 8px 6px;*/
+  font-family: 'Oswald', sans-serif;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+.rounded { 
+  border: 3px solid #369f1d;
+  border-radius:15px;
+  -moz-border-radius:15px; 
+  -webkit-border-radius:15px;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+   font-weight: 400;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;
+   font-weight: 400;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black;
+   font-weight: 400;
+}
+
+:-ms-input-placeholder {  
+   color: black;
+   font-weight: 400;
+}
+
+#searchbutton {
+  width: 80px;
+  height: 50px;
+  font-size: 2em !important;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300 !important;
+  color: #fff !important;
+  background-color: #0046ac !important;
+  letter-spacing: 1px !important;
+  /*text-transform: uppercase;*/
+  text-align: center !important;
+  border: solid 2.5px #FFF !important;
+  padding: 0px !important;
+  margin: 0;
+  box-shadow: none !important;
+}
+
+
+/********** THUMBNAILS **********/
+
+.col-sm-4 .col-md-4 {
+  text-align: center;
+  border: 1px solid #369f1d;
+}
+
+#blueBox {
+	background-color: #fff;
+	max-height: 150px;
+  max-width: 100%;
+  border: 2px solid #fff;
+  margin-bottom: 10px;
+}
+
+#homegrid {
+  background: #000;
+}
+
+.grid-link {
+  color: #FFF;
+  margin-bottom: 20px !important;
+  text-align: center !important;
+  font-size: 24px;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+}
+
+#grid-col {
+  text-align: center !important;
+}
+
+
+/********** FOOTER **********/
+.footer {
+  background-color: #030503;
+  min-height: 100px;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-around; /* Safari 6.1+ */
+  display: flex;
+  justify-content: center;
+}
+
+.social-media {
+  display: block;
+  max-width: 90px;
+  padding: 10px 30px 0px 30px;
+}
+
+.social-media .img-responsive {
+  margin: 0 auto;
+}
+
+
+
+/********** MEDIA QUERIES **********/
+
+@media (max-width: 768px) {
+  .jumbotron {
+    background-size: auto;
+    background-position: 20% 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .jumbotron {
+    background-size: auto;
+    background-position: 20% 50%;
+  }
+
+  #popUp {
+    min-height: 160px;
+  }
+
+  .buttonText {
+    margin-top: 5px;
+  }
+}
