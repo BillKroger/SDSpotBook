@@ -14,27 +14,13 @@
 	</div><!-- #content -->
 
 	<div class="footer">
-			<div class="social-media img-responsive">
-				<a href="#">
-      				<img src="../wp-content/themes/_s-master/images/footer_fb.png" alt="Facebook" >
-      			</a>
-      		</div>
-      		<div class="social-media img-responsive">
-      			<a href="#">
-      				<img src="../wp-content/themes/_s-master/images/footer_twitter.png" alt="Twitter" >
-      			</a>
-      		</div>
-      		<div class="social-media img-responsive">
-      			<a href="#">
-      				<img src="../wp-content/themes/_s-master/images/footer_pinterest.png" alt="Pinterest" >
-      			</a>
-      		</div>
-      		<div class="social-media img-responsive">
-      			<a href="#">
-      				<img src="../wp-content/themes/_s-master/images/footer_google.png" alt="Google+" >
-      			</a>
-			</div>
-		</div>
+      	<div class="social">
+                  <a class="icon icon-facebook" href="#" target="_blank"></a>
+                  <a class="icon icon-twitter" href="#" target="_blank"></a>
+                  <a class="icon icon-instagram" href="#" target="_blank"></a>
+                  <a class="icon icon-pinterest" href="#" target="_blank"></a>
+            </div>
+	</div>
 
 <?php wp_footer(); ?>
 
