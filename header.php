@@ -33,7 +33,7 @@
 	<header id="header" class="navbar navbar-inverse navbar-static-top">
 		<div class="container">
 			
-			<a class="navbar-brand" href="/"><img class="logo" src="images/logo-whitebg.svg" height="" width="" alt="SD Spot Book"></a>
+			<a class="navbar-brand" href="/"><img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-whitebg.svg" height="" width="" alt="SD Spot Book"></a>
 
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 				<span class="icon-bar"></span>
