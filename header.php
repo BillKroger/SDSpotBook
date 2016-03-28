@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 <!-- Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700|Lato:400,300,900,700,100|Droid+Sans:400,700|Roboto:400,900,700,500,300,100|Open+Sans:400,300,600,700|Oswald:400,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700|Pathway+Gothic+One:400|Lato:400,300,900,700,100|Droid+Sans:400,700|Roboto:400,900,700,500,300,100|Open+Sans:400,300,600,700|Oswald:400,300' rel='stylesheet' type='text/css'>
 
 <?php wp_head(); ?>
 </head>
@@ -35,7 +35,7 @@
 			
 			<a class="navbar-brand" href="/"><img class="logo" src="images/logo-whitebg.svg" height="" width="" alt="SD Spot Book"></a>
 
-			<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -45,9 +45,9 @@
 				<ul class="nav navbar-nav navbar-right">
 					<!-- <li><a class="navbarItems" href="#">About</a></li> -->
 
-					<!-- Alternate Dropdown Login Menu 
+					<!-- Alternate Dropdown Login Menu -->
 					
-					<ul class="nav pull-right">
+					<!-- <ul class="nav pull-right">
 			          <li class="dropdown" id="menuLogin">
 			            <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
 			            <div class="dropdown-menu" style="padding:17px;">
@@ -58,9 +58,9 @@
 			              </form>
 			            </div>
 			          </li>
-			        </ul>
+			        </ul> -->
 
--->
+
 					<li class = "dropdown">
 						<a class="navbarItems" href="#" class="dropdown-toggle" data-toggle = "dropdown">Log In <b class="caret"></b></a>
 						

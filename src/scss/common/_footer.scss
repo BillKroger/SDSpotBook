@@ -1,0 +1,33 @@
+// Common - Footer
+//------------------------------------------------------------------------------
+
+/* Social Icons */
+.icon {
+	/* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-size: 4em;
+    speak: none;
+    line-height: 1;
+    padding: 10px;
+    margin: 0 10px;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+    content: "\e910";
+}
+.icon-instagram:before {
+    content: "\e911";
+}
+.icon-twitter:before {
+    content: "\e912";
+}
+.icon-pinterest:before {
+    content: "\e918";
+}
+.icon-pinterest2:before {
+    content: "\e919";
+}
+

@@ -1,0 +1,46 @@
+
+// Common - Base
+//------------------------------------------------------------------------------
+
+html {
+	margin: 0;
+	padding: 0;
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font-pathway-gothic;
+	background: #FFF;
+}
+
+a, a:visited {
+  color: #000;
+  transition: color 400ms;
+}
+
+a:hover {
+  color: #337AB7;
+}
+
+a, a:focus, a:hover, a:active, a:visited {
+  outline: none !important;
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}

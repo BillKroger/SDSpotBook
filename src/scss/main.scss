@@ -1,0 +1,27 @@
+/* =========================================================================
+
+    Project: SD Spot Book
+    Author: Bill Kroger
+    Last updated: @@timestamp
+@@toc
+
+   ========================================================================= */
+
+// Vendor Dependencies
+@import "normalize.css/normalize";
+
+// Authored Dependencies
+@import "setup/variables";
+@import "setup/mixins";
+@import "setup/sprites";
+
+// Common styles & layouts
+@import "common/base";
+@import "common/layout";
+@import "common/header";
+@import "common/footer";
+@import "common/default";
+
+// Components
+@import "components/hero";
+@import "components/navigation";

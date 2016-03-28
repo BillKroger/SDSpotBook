@@ -11,8 +11,8 @@ Version:      1.0
 /********** FONTS **********/
 @font-face {
     font-family: 'icomoon';
-    src:    url('icons/icomoon.eot?l1slh8');
-    src:    url('icons/icomoon.eot?l1slh8#iefix') format('embedded-opentype'),
+    src: url('icons/icomoon.eot?l1slh8');
+    src: url('icons/icomoon.eot?l1slh8#iefix') format('embedded-opentype'),
         url('icons/icomoon.ttf?l1slh8') format('truetype'),
         url('icons/icomoon.woff?l1slh8') format('woff'),
         url('icons/icomoon.svg?l1slh8#icomoon') format('svg');
@@ -25,14 +25,9 @@ Version:      1.0
     font-family: 'icomoon' !important;
     font-size: 4em;
     speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
     line-height: 1;
     padding: 10px;
     margin: 0 10px;
-
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -56,27 +51,17 @@ Version:      1.0
 
 
 /********** RESETS **********/
-a {
-  transition: color 400ms;
-}
-
-a:focus {
-  outline-offset: 0px;
-}
-
-a, a:focus, a:hover, a:active, a:visited {
-  outline: none !important;
-}
-
-a:visited {
+a, a:visited {
   color: #000;
+  transition: color 400ms;
 }
 
 a:hover {
   color: #337AB7;
 }
 
-a, a:hover {
+a, a:focus, a:hover, a:active, a:visited {
+  outline: none !important;
   text-decoration: none;
 }
 
@@ -86,10 +71,6 @@ html, body {
 }
 
 body {
-  background: #FFF;
-}
-
-#main {
   background: #FFF;
 }
 
@@ -106,11 +87,6 @@ h3 {
   margin-bottom: 20px;
 }
 
-.background {
-  background: #FFF;
-}
-
-
 /********** HEADER **********/
 #header {
   padding: 10px 0px;
@@ -123,11 +99,7 @@ h3 {
 
 .navbar-brand img {
   max-height: 50px;
-}
-
-.logo {
   max-width: 100%;
-  height: auto;
 }
 
 /********** NAVBAR **********/
@@ -137,6 +109,7 @@ h3 {
 
 .navbar-inverse {
   background: #FFF;
+  border: 0px;
 }
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
@@ -145,12 +118,47 @@ h3 {
 
 
 
+@media only screen and (max-width: 767px) {
+  #header > .container > div {
+    clear:both;
+    border: 0px;
+    position:absolute;
+    width:100%;
+    top: 70px;
+    background: #EEE;
+  }
+
+  .navbarItems {
+    background-color: #EEE !important;
+  }
+
+  .navbar-brand {
+    padding-left: 5px;
+  }
+
+  .navbar-toggle {
+    margin-right: 0px !important;
+  }
+}
+
+.navbar-toggle, .navbar-toggle:focus, .navbar-toggle:active, .navbar-toggle:visited, .navbar-toggle:hover {
+  background-color: #FFF !important;
+  border: 2px solid #000;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+.icon-bar {
+  color: #000;
+  text-shadow: none;
+  background-color: #000 !important;
+  width: 25px !important;
+  height: 3px !important;
+}
+
 /********** NAVBAR MENU **********/
 .dropdown-menu {
   background-color: #FFF;
-  /*border-right: 3px solid #888;
-  border-bottom: 3px solid #888;
-  border-left: 3px solid #888;*/
   max-height: 270px;
   min-width: 250px;
   margin: 10px 0 0;
@@ -223,7 +231,6 @@ input:-webkit-autofill:focus {
     -webkit-text-fill-color: #333;
 } 
 
-
 /********** JUMBOTRON **********/
 .jumbotron {
 	background-image: url("../_s-master/images/bslipslide_bw.png");
@@ -238,8 +245,6 @@ input:-webkit-autofill:focus {
 .jumbotron .container {
   width: 100%;
 }
-
-
 
 /********** JUMBOTRON - TRANSPARENT DIV **********/
 #popUp {
@@ -350,6 +355,11 @@ form span .searchBox {
   padding: 0px !important;
   margin: 0;
   box-shadow: none !important;
+}
+
+#searchbutton:focus, button {
+  outline-color: transparent !important;
+  outline: 0px !important;
 }
 
 

@@ -1,0 +1,19 @@
+{
+  "name": "sdspotbook",
+  "description": "san diego skate spot directory",
+  "main": "index.php",
+  "authors": [
+    "Bill Kroger"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/BillKroger/SDSpotBook",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
