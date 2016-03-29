@@ -3,6 +3,10 @@
 
 /* Navigation */
 
+.navbar {
+  margin-bottom: 0px;
+}
+
 .navbar-brand {
 	max-width: 75%;
 	padding: 0px;
@@ -12,3 +16,86 @@
 		max-width: 100%;
 	}
 }
+
+.open>a.navbarItems {
+  background: #FFF !important;
+}
+
+@media only screen and (max-width: $tablet - 1px) {
+	#header > .container > div {
+    clear:both;
+    border: 0px;
+    position:absolute;
+    width:100%;
+    top: 70px;
+    background: #EEE;
+  }
+
+  .navbarItems {
+    background-color: #EEE !important;
+  }
+
+  .navbar-brand {
+    padding-left: 5px;
+  }
+
+  .navbar-toggle {
+    margin-right: 0px !important;
+  }
+}
+
+.navbar-toggle, .navbar-toggle:focus, .navbar-toggle:active, .navbar-toggle:visited, .navbar-toggle:hover {
+	background-color: #FFF !important;
+	border: 2px solid #000;
+	box-shadow: none;
+	border-radius: 0px;
+}
+
+.icon-bar {
+  color: #000;
+  text-shadow: none;
+  background-color: #000 !important;
+  width: 25px !important;
+  height: 3px !important;
+}
+
+/* Dropdown Login Menu */
+.dropdown-menu {
+  background-color: #FFF;
+  max-height: 270px;
+  min-width: 250px;
+  margin: 10px 0 0;
+  padding: 15px;
+}
+
+.dropdown-menu p {
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+  font-weight: 400;
+  margin: 0 auto;
+  letter-spacing: .05em;
+}
+
+#passwordLabel {
+  margin-top: 5px;
+}
+
+.dropdown-menu input {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  margin: 5px auto 5px;
+  padding: 5px;
+  min-width: 100%;
+  letter-spacing: .05em;
+  font-size: 1.5em !important;
+}
+
+.dropdown-menu button {
+  display: block;
+  margin: 10px auto 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+

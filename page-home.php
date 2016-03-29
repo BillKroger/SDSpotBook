@@ -39,19 +39,19 @@ get_header(); ?>
 				<!-- Thumbnail grid using thumbnail class -->
 				<div class="row">
 	  				<div id="grid-col" class="col-sm-4 col-md-4">
-	  					<a class="grid-link" href="#">Browse Spot Types</a>
+	  					<a class="grid-link" href="#">Spot Types</a>
 	   					<a href="#">
 	      					<img class="center-block" id="blueBox" src="../wp-content/themes/_s-master/images/spotType.png" alt="Browse Spot Types" >
 	      				</a>
 	      			</div>
 	  				<div id="grid-col" class="col-sm-4 col-md-4">
-	  					<a class="grid-link" href="#">Browse Neighborhoods</a>
+	  					<a class="grid-link" href="#">Neighborhoods</a>
 	      				<a href="#">
 	      					<img class="center-block" id="blueBox" src="../wp-content/themes/_s-master/images/neighborhoods2.png" alt="Browse Neighborhoods">
 	      				</a>
 	      			</div>
 	      			<div id="grid-col" class="col-sm-4 col-md-4">
-	      				<a class="grid-link" href="#">Browse Skateparks</a>
+	      				<a class="grid-link" href="#">Skateparks</a>
 	      				<a href="#">
 	      					<img class="center-block" id="blueBox" src="../wp-content/themes/_s-master/images/skateparks.png" alt="Browse Skateparks">
 	      				</a>

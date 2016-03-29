@@ -26,6 +26,13 @@
 <!-- Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700|Pathway+Gothic+One:400|Lato:400,300,900,700,100|Droid+Sans:400,700|Roboto:400,900,700,500,300,100|Open+Sans:400,300,600,700|Oswald:400,300' rel='stylesheet' type='text/css'>
 
+<!-- Main Stylesheets -->
+<link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+	<link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
 <?php wp_head(); ?>
 </head>
 
@@ -65,13 +72,13 @@
 						<a class="navbarItems" href="#" class="dropdown-toggle" data-toggle = "dropdown">Log In <b class="caret"></b></a>
 						
 						<ul class = "dropdown-menu">
-							<form id="loginForm">
+							<form method="post" action="/form" id="loginForm">
 								
-								<p>Username or Email Address</p>
-				                <input style="background:#FFF;" name="username" id="username" type="text" placeholder=" Username">
+								<!-- <p>Username or Email Address</p> -->
+				                <input type="text" id="username" name="username" autocomplete="off" placeholder="username">
 				                
-				                <p id="passwordLabel">Password</p>
-				                <input name="password" id="password" type="password" placeholder=" Password">
+				                <!-- <p id="passwordLabel">Password</p> -->
+				                <input type="text" id="password" name="password" autocomplete="off" placeholder="password">
 				                
 				                <button type="button" id="btnLogin" class="btn">Login</button>
 

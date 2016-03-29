@@ -81,7 +81,8 @@ img {
 }
 
 h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
   text-align: center;
   color: #000;
   margin-bottom: 20px;
@@ -112,8 +113,8 @@ h3 {
   border: 0px;
 }
 
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-  background: #FFF;
+.open>a.navbarItems {
+  background: #FFF !important;
 }
 
 
@@ -128,7 +129,7 @@ h3 {
     background: #EEE;
   }
 
-  .navbarItems {
+  .navbarItems, .open>a.navbarItems {
     background-color: #EEE !important;
   }
 
@@ -158,7 +159,16 @@ h3 {
 
 /********** NAVBAR MENU **********/
 .dropdown-menu {
-  background-color: #FFF;
+  background-color: #EEE;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#BBB));
+  background-image: -webkit-linear-gradient(top, #EEE, #BBB);
+  background-image: -moz-linear-gradient(top, #EEE, #BBB);
+  background-image: -ms-linear-gradient(top, #EEE, #BBB);
+  background-image: -o-linear-gradient(top, #EEE, #BBB);
+  background-image: linear-gradient(top, #EEE, #BBB);
+  -moz-box-shadow: 0 -3px 3px rgba(0,0,0,.5) inset;
+  -webkit-box-shadow: 0 -3px 3px rgba(0,0,0,.5) inset;
+  box-shadow: 0 -3px 3px rgba(0,0,0,.5) inset;
   max-height: 270px;
   min-width: 250px;
   margin: 10px 0 0;
@@ -166,19 +176,11 @@ h3 {
 }
 
 .dropdown-menu p {
-  font-family: 'Oswald', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #000;
   font-weight: 400;
   margin: 0 auto;
   letter-spacing: .05em;
-}
-
-.dropdown a, .dropdown a:focus, .dropdown a:active, .dropdown a:visited {
-  color: #000 !important;
-}
-
-.dropdown a:hover {
-  color: #337AB7 !important;
 }
 
 #passwordLabel {
@@ -186,25 +188,36 @@ h3 {
 }
 
 .dropdown-menu input {
-  font-family: 'Oswald', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   display: inline-block;
   margin: 5px auto 5px;
   padding: 5px;
   min-width: 100%;
   letter-spacing: .05em;
-  font-size: 1.5em !important;
+  /*font-size: 1.5em !important;*/
 }
 
+
 .dropdown-menu button {
-  display: block;
+  /*display: block;*/
   margin: 10px auto 5px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  /*font-weight: 700;*/
+}
+
+#btnLogin, #btnLogin:link, #btnLogin:visited, #btnLogin:focus, #btnLogin:hover, #btnLogin:active {
+  background: #0046ac !important;
+  box-shadow: none;
+  border: 0px;
+  text-shadow: none;
+  color: #FFF;
+  font-size: 1.25em;
+  border-radius: 2px;
 }
 
 .navbarItems {
-  font-family: 'Oswald', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 2em;
 }
 
@@ -270,7 +283,7 @@ input:-webkit-autofill:focus {
 .findSpots {
   text-align: center;
   color: #000; 
-  font-family: 'Oswald', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 3.5em;
 }
 
@@ -308,7 +321,7 @@ form span .searchBox {
   padding: 6px 15px 6px 30px !important;
   margin: 3px; 
   /*background: url('../_s-master/images/search.png') no-repeat 8px 6px;*/
-  font-family: 'Oswald', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   min-width: 300px;
   max-width: 350px;
 }
@@ -321,30 +334,35 @@ form span .searchBox {
 }
 
 ::-webkit-input-placeholder {
-   color: black;
-   font-weight: 400;
+   color: rgba(0,0,0,0.5);
+   font-size: 1.25em;
+
+   /*font-weight: 400;*/
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: black;
-   font-weight: 400;
+   color: rgba(0,0,0,0.5);
+   font-size: 1.25em;
+   /*font-weight: 400;*/
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: black;
-   font-weight: 400;
+   color: rgba(0,0,0,0.5);
+   font-size: 1.25em;
+   /*font-weight: 400;*/
 }
 
 :-ms-input-placeholder {  
-   color: black;
-   font-weight: 400;
+   color: rgba(0,0,0,0.5);
+   font-size: 1.25em;
+   /*font-weight: 400;*/
 }
 
 #searchbutton {
   width: 80px;
   height: 50px;
   font-size: 2em !important;
-  font-family: 'Lato', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300 !important;
   color: #fff !important;
   background-color: #0046ac !important;
@@ -376,6 +394,13 @@ form span .searchBox {
   max-width: 100%;
   /*border: 2px solid #000;*/
   margin-bottom: 10px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+@media only screen and (max-width: 767px) {
+  #blueBox {
+    margin-bottom: 50px;
+  }
 }
 
 #homegrid {
@@ -384,15 +409,23 @@ form span .searchBox {
 
 .grid-link {
   color: #000;
-  margin-bottom: 20px !important;
+  margin-bottom: 10px !important;
   text-align: center !important;
   font-size: 24px;
+  font-weight: 700;
   display: inline-block;
-  font-family: 'Oswald', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
 }
 
 #grid-col {
   text-align: center !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid-link {
+    font-size: 18px;
+  }
 }
 
 
