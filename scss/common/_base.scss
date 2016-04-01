@@ -14,7 +14,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: $font-pathway-gothic;
+	font-family: $font-helvetica-neue;
 	background: #FFF;
 }
 
@@ -39,7 +39,7 @@ img {
 }
 
 h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-helvetica-neue;
   text-align: center;
   color: #000;
   margin-bottom: 20px;

@@ -17,9 +17,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<!-- normalize.css -->
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/normalize.css" type="text/css" />
-
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -72,6 +69,8 @@
 						<a class="navbarItems" href="#" class="dropdown-toggle" data-toggle = "dropdown">Log In <b class="caret"></b></a>
 						
 						<ul class = "dropdown-menu">
+
+							<p>Log in to Your Account</p>
 							<form method="post" action="/form" id="loginForm">
 								
 								<!-- <p>Username or Email Address</p> -->
@@ -80,7 +79,7 @@
 				                <!-- <p id="passwordLabel">Password</p> -->
 				                <input type="text" id="password" name="password" autocomplete="off" placeholder="password">
 				                
-				                <button type="button" id="btnLogin" class="btn">Login</button>
+				                <button type="button" id="btnLogin" class="btn">Log In</button>
 
 			              	</form>				              	
 						</ul>
