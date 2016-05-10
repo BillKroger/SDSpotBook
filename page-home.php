@@ -65,7 +65,6 @@ get_header(); ?>
 		  	<label for="tab1">Spots
 		  		<div class="arrow-down"></div>
 		  	</label>
-		    
 			<input id="tab2" type="radio" name="tabs">
 			<label>
 				<div class="tabbed-nav-dropdown">
